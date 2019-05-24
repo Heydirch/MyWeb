@@ -1,0 +1,88 @@
+$(function()
+{
+	"use strict";
+	var n1,n2,code,end,i,j,k,flag;
+	i=j=k=flag=0;
+	$("#n1,#n2,#n3,#n4,#n5,#n6,#n7,#n8,#n9,#n0").click(function()
+	{
+		if($("#t1").val()=="0"||$("#t1").val()=="NaN"||$("#t1").val()==end&&end!=0||n2=="")
+		{
+			$("#t1").val("");
+		}
+		$("#t1").val($("#t1").val()+$(this).val());
+	});
+	$("#btn1,#btn2,#btn3,#btn4").click(function()
+	{
+		if(i==0)
+		{
+			n1=$("#t1").val();
+		}
+		$("#t1").val("");
+		code=$(this).val();
+		i=1;
+		j=0;
+	});
+	$("#btn5").click(function()
+	{
+		if(j==0)
+		{
+			n2=$("#t1").val();
+		}
+		if(n1==undefined)
+		{
+			end=$("#t1").val();	
+		}
+		if(n2=="")
+		{
+			$("#t1").val("未输入数据!");
+		}
+		else
+		{
+			switch(code)
+			{
+				case "+":end = parseFloat(n1)+parseFloat(n2);break;
+				case "-":end = parseFloat(n1)-parseFloat(n2);break;
+				case "*":end = parseFloat(n1)*parseFloat(n2);break;
+				case "/":end = parseFloat(n1)/parseFloat(n2);break;
+			}
+			if(end=="Infinity")
+			{
+				$("#t1").val("除数不能为零!");
+			}
+			else
+			{
+				$("#t1").val(end);
+				n1=end;	
+			}
+		}
+		i=0;
+		j=1;
+	});
+	$("#nf").click(function()
+	{
+		$("#t1").val($("#t1").val()+".");
+	});
+	$("#negate").click(function()
+	{
+		if($("#t1").val()!="0"&&$("#t1").val()!=""&&end!="Infinity"&&n2!="")
+		{
+			$("#t1").val($("#t1").val()*-1);
+		}
+	});
+	$("#btn6").click(function()
+	{
+		$("#t1").val(function(n,val)
+		{	
+			return val.substr(0,val.length-1);
+		});
+		if($("#t1").val()=="")
+		{
+			$("#t1").val("0");
+		}
+	});
+	$("#re").click(function()
+	{
+		$("#t1").val("0");
+		n1=n2=end="0";
+	});
+});
