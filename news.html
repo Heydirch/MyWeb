@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Mercurius - News</title>
+<link href="img/logo.ico" rel="shortcut icon" />
+<link href="css/APlayer.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="container">
+		<div id="container-content">
+			<aside id="left">
+				<div class="img" style="background-image: url(img/2.gif); z-index: 6; opacity:1;"></div>
+				<div class="img"></div>
+			</aside>
+			<div id="menu" class="d-main" style="background-color: rgba(182,195,190,1.00);">
+				<a class="name" href="about.html">Mercurius</a>
+				<a class="home" href="index.html">Home</a>
+				<div class="hr1"></div>
+				<a class="news" href="news.html">News</a>
+				<div class="hr2"></div>
+				<a class="gallery" href="gallery.html">Gallery</a>
+				<div class="hr3"></div>
+				<div class="box"></div>
+			</div>
+			<div id="main">
+				<div class="left"></div>
+				<div class="middle">
+					<div id="top">
+						<nav class="list">
+							<li class="about" style="background-color: rgba(182,195,190,1.00);">
+								<a href="about.html">
+									<span>About</span>
+								</a>
+							</li>
+							<li class="read" style="background-color: rgba(182,195,190,1.00);">
+								<a href="news.html">
+									<span>Read</span>
+								</a>
+							</li>
+							<li class="favorite" style="background-color: rgba(182,195,190,1.00);">
+								<a href="gallery.html">
+									<span>Favorite</span>
+								</a>
+							</li>
+							<li class="calculator" style="background-color: rgba(182,195,190,1.00);">
+								<a href="Calculator.html">
+									<span>Calculator</span>
+								</a>
+							</li>
+						</nav>
+						<div class="bar" style="background-color: rgba(182,195,190,1.00);"></div>
+						<div id="t_user">
+							<span class="text"></span>
+						</div>
+						<div id="d-bar" style="background-color: rgba(182,195,190,1.00);"></div>
+					</div>
+					<main id="d-main">
+						<div id="works">
+                            <h1 align="center">網站開發文本</h1><br><br>
+                            <article>
+                            	<h2>概述</h2>
+                            	<p>本站是基於像素風格的一個個人網站。
+                            		<br><br>但為什麼是像素風格的?
+                            		<br><br>因為——我喜歡呀!
+                            	</p><br>
+                            	<h2>本站目録</h2>
+                            	<blockquote style="background-color:beige;">
+                            		<p>MyWeb<br>
+										├── css              # 存放樣式文件<br>
+										│   └── APlayer.min.css          # 播放器插件樣式<br>
+										│   └── demo.css         # 計算器樣式<br>
+										│   └── style.css         # 本站主布局樣式<br>
+										├── font               # 存放字體文件<br>
+										│   └── misaki_gothic.ttf          # 美咲黒體<br>
+										│   └── Pixel Millennium.ttf         # 像素體<br>
+										├── img    # 存放圖片素材文件<br>
+										├── js             # 存放js脚本文件<br>
+										│   └── APlayer.min.js          # 播放器插件<br>
+										│   └── code.js          # 本站主布局視覺效果<br>
+										│   └── demo.js          # 計算器主程序<br>
+										│   └── jquery-3.3.1.js          # jquery插件<br>
+										│   └── typed.min.js          # 實現打字效果插件<br>
+										├── media       # 存放音樂及封面<br>
+										├── news.html       # 開發文本頁面<br>
+										├── about.html       # 個人介紹頁面<br>
+										├── calculator.html       # 計算器頁面<br>
+										├── gallery.html       # 畫廊頁面<br>
+										└── index.html       # 本站主入口頁面
+                           			</p>
+                            	</blockquote>
+                            </article>
+						</div>
+					</main>
+				</div>
+				<div id="aplayer" class="d-main" style="background-color: rgba(182,195,190,0.4);"></div>
+				<div class="right"></div>
+			</div>
+			<div id="return"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script type="text/javascript" src="js/APlayer.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+	<script type="text/javascript">
+		//初始化載入文本
+		var typed = new Typed('.text', 
+		{
+  			strings:["人們必須心中懷著混亂，為了能創造一個舞動的新星"],
+			typeSpeed:100,
+			showCursor:false
+		});
+	</script>
+</body>
+</html>

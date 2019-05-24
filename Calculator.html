@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Mercurius - Calculator</title>
+<link href="img/logo.ico" rel="shortcut icon" />
+<link href="css/APlayer.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="container">
+		<div id="container-content">
+			<aside id="left">
+				<div class="img" style="background-image: url(img/4.gif); z-index: 6; opacity:1;"></div>
+				<div class="img"></div>
+			</aside>
+			<div id="menu" class="d-main" style="background-color: rgba(51,204,153,1.00);">
+				<a class="name" href="about.html">Mercurius</a>
+				<a class="home" href="index.html">Home</a>
+				<div class="hr1"></div>
+				<a class="news" href="news.html">News</a>
+				<div class="hr2"></div>
+				<a class="gallery" href="gallery.html">Gallery</a>
+				<div class="hr3"></div>
+				<div class="box"></div>
+			</div>
+			<div id="main">
+				<div class="left"></div>
+				<div class="middle">
+					<div id="top">
+						<nav class="list">
+							<li class="about" style="background-color: rgba(51,204,153,1.00);">
+								<a href="about.html">
+									<span>About</span>
+								</a>
+							</li>
+							<li class="read" style="background-color: rgba(51,204,153,1.00);">
+								<a href="news.html">
+									<span>Read</span>
+								</a>
+							</li>
+							<li class="favorite" style="background-color: rgba(51,204,153,1.00);">
+								<a href="gallery.html">
+									<span>Favorite</span>
+								</a>
+							</li>
+							<li class="calculator" style="background-color: rgba(51,204,153,1.00);">
+								<a href="Calculator.html">
+									<span>Calculator</span>
+								</a>
+							</li>
+						</nav>
+						<div class="bar" style="background-color: rgba(51,204,153,1.00);"></div>
+						<div id="t_user">
+							<span class="text"></span>
+						</div>
+						<div id="d-bar" style="background-color: rgba(51,204,153,1.00);"></div>
+					</div>
+					<main id="d-main">
+						<div id="works">
+                        	<article>
+                            	<h2 align="center">簡易計算器</h2><br>
+                                <div class="content">
+                                    <form name="math" class="corl">
+                                        <span id="m_name">計算器</span>
+                                        <input type="text" id="t1" readonly value="0"/>
+                                        <input type="button" id="n7" value="7"/>
+                                        <input type="button" id="n8" value="8"/>
+                                        <input type="button" id="n9" value="9"/>
+                                        <input type="button" id="btn1" value="+"/>
+                                        <input type="button" id="n4" value="4"/>
+                                        <input type="button" id="n5" value="5"/>
+                                        <input type="button" id="n6" value="6"/>
+                                        <input type="button" id="btn2" value="-"/>
+                                        <input type="button" id="n1" value="1"/>
+                                        <input type="button" id="n2" value="2"/>
+                                        <input type="button" id="n3" value="3"/>
+                                        <input type="button" id="btn3" value="*"/>
+                                        <input type="reset" id="re" value="C"/>
+                                        <input type="button" id="n0" value="0"/>
+                                        <input type="button" id="btn6" value="DEL"/>
+                                        <input type="button" id="btn4" value="/"/>
+                                        <input type="button" id="btn5" value="="/>
+                                        <input type="button" id="nf" value="."/>
+                                        <input type="button" id="negate" value="±"/>
+                                        <span id="demo">Beta.ver1.0</span>
+                                    </form>
+                                </div>
+                                <br><br><br>
+                                <p align="center">用jquery寫的一個小型計算器</p>
+                                <br><br><br>
+                            </article>
+						</div>
+					</main>
+				</div>
+				<div id="aplayer" class="d-main" style="background-color: rgba(51,204,153,0.4);"></div>
+				<div class="right"></div>
+			</div>
+			<div id="return"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script type="text/javascript" src="js/APlayer.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+	<script type="text/javascript">
+		//初始化載入文本
+		var typed = new Typed('.text', 
+		{
+  			strings:["有知識的人必然不僅能愛他的仇敵,而且能恨他的朋友"],
+			typeSpeed:100,
+			showCursor:false
+		});
+	</script>
+</body>
+</html>
